@@ -1,0 +1,106 @@
+n=int(input())
+if n == 2:
+    print(n)
+else:
+    m=1
+    Count=0
+    
+    for i in range(1,n+1):
+        k=m+i-1
+        K=1
+        for j in range(1,n+1):
+            if i>=j:
+                if i==1 or j==n:
+                    break
+                elif i%2==0:
+                    print(k,end=' ')
+                    k-=1
+                else:
+                    print(K,end=' ')
+                    K+=1
+            
+            else:
+                print(' ',end=' ')
+        Count+=1
+        print()
+        
+
+N=n-1
+if N==3:
+    kk=1
+    for i in range(1,N+1):
+        m=kk+i-1
+        KK=N
+        p=1
+        for j in range(1,N+1):
+            if j+i<=N+1:
+                if i==N:
+                    break
+                elif i==N-1:
+                    if j%2==0:
+                    
+                        print(p-1,end=' ')
+                    
+                    else:
+                        p+=1
+                        print(p,end=' ')
+                
+                elif i%2==0:
+                    print(m-1,end=' ')
+                    m+=1
+           
+                else:
+                    if N-3==i:
+                       print(KK,end=' ')
+                       KK-=1
+                   
+                    else:
+                        if j%2!=0:
+                           print(p,end=' ')
+                           p+=1
+                        else:
+                            print(p,end=' ')
+                        
+                
+                
+            else:
+                print(' ',end=' ')
+        print()
+    
+else:
+    kk=1
+    for i in range(1,N+1):
+        m=kk+i-1
+        KK=N
+        p=1
+        for j in range(1,N+1):
+            if j+i<=N+1:
+                if i==N:
+                    break
+                elif i==N-1:
+                    if j%2==0:
+                    
+                        print(p-1,end=' ')
+                    
+                    else:
+                        p+=1
+                        print(p,end=' ')
+                
+                elif i%2==0:
+                    print(m-1,end=' ')
+                    m+=1
+           
+                else:
+                    if N-3==i:
+                       print(KK,end=' ')
+                       KK-=1
+                   
+                    else:
+                        print(KK+1,end=' ')
+                        KK-=1
+                
+                
+            else:
+                print(' ',end=' ')
+        print()
+    
